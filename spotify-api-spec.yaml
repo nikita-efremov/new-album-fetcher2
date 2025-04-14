@@ -1,0 +1,19 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Spotify API Specification
+paths:
+  /albums/{id}:
+    get:
+      summary: Get an album
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: The ID of the album.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful operation
+components: {}
